@@ -1,2 +1,10 @@
 @import "settings";
 @import "foundation";
+
+footer {
+	position: fixed;
+	bottom: 3px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
