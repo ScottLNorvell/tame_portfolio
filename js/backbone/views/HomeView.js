@@ -13,7 +13,10 @@ app.HomeView = Backbone.View.extend({
     this.$el.html('');
     this.$el.hide();
     this.$el.html(template());
-    this.$el.fadeIn();
+    this.$el.fadeIn(function() {
+      $(document).foundation('off');
+      $(document).foundation();
+    });
   },
 
   destroy: function() {
