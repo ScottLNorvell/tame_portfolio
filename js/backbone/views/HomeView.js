@@ -4,7 +4,11 @@ app.HomeView = Backbone.View.extend({
   el: $('#main-container'),
 
   initialize: function() {
-
+    if ($('.top-bar').hasClass('expanded')) {
+      $('.top-bar').attr('style', '');
+      $('.top-bar-section').attr('style', 'left: 0%');
+      $('.top-bar').removeClass('expanded');
+    }
   },
 
   render: function() {
@@ -14,8 +18,7 @@ app.HomeView = Backbone.View.extend({
     this.$el.hide();
     this.$el.html(template());
     this.$el.fadeIn(function() {
-      $(document).foundation('off');
-      $(document).foundation();
+      
     });
   },
 
