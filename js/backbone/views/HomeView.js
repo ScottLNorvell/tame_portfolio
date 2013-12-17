@@ -5,8 +5,8 @@ app.HomeView = Backbone.View.extend({
 
   initialize: function() {
     if ($('.top-bar').hasClass('expanded')) {
-      $('.top-bar').attr('style', '');
-      $('.top-bar-section').attr('style', 'left: 0%');
+      // $('.top-bar').attr('style', '');
+      // $('.top-bar-section').attr('style', 'left: 0%');
       $('.top-bar').removeClass('expanded');
     }
   },
